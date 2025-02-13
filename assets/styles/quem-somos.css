@@ -1,0 +1,69 @@
+.quem-somos{
+    padding: 3em 0 3em 0;
+    text-align: center;
+    width: 100%;
+}
+
+.quem-somos__titulo{
+    color: #8D0606;
+    font-family: Pacifico, cursive;
+    font-size: 3rem;
+    width: 100%;
+}
+
+.quem-somos__descricao{
+    color: #595959;
+    font-size: 1.5rem;
+    font-weight: 100;
+    padding-top: 1rem;
+}
+
+.pessoa{
+    display: flex;
+    flex-flow: column;
+}
+
+.pessoa__nome{
+    color: #8D0606;
+    font-family: Pacifico, cursive;
+    font-size: 2rem;
+}
+
+.pessoa__funcao{
+    color: #595959;
+    font-family: "Roboto", serif;
+    font-size: 1.5rem;
+    font-weight: 100;
+    text-transform: lowercase;
+}
+
+.pessoas{
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem 0 3rem 0;
+}
+
+.pessoa__imagem{
+    border-radius: 10rem;
+    height: 300px;
+    margin: 0 auto;
+    width: 300px;
+}
+
+.pessoa__imagem--roberta{
+    background: url(../images/pessoas/roberta.jpg) no-repeat;
+    background-size: contain;
+
+}
+
+.pessoa__imagem--marcela{
+    background: url(../images/pessoas/marcela.jpg) no-repeat;
+    background-size: contain;
+
+}
+
+.pessoa__imagem--andreia{
+    background: url(../images/pessoas/andreia.jpg) no-repeat;
+    background-size: contain;
+
+}

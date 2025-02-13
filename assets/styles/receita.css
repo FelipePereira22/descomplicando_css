@@ -2,6 +2,7 @@
     background: #e5e5e5;
     display: flex;
     flex-flow: wrap;
+    font-family: "Roboto", serif;
     padding: 5rem 0 0 5rem;
 }
 
@@ -11,4 +12,41 @@
     flex-flow: column;
     margin: 0 5rem 5rem 0;
     width: calc(25% - 5rem);
+}
+
+.receita__imagem{
+    height: 100%;
+    width: 100%;    
+}
+
+.receita__titulo{
+    padding: 0.6rem;
+    text-align: justify;
+}
+
+.receita__descricao{
+    padding: 10px;
+    text-align: justify;
+}
+
+.receita__botao{
+    background: #8D0606;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    margin: 0.6rem;
+    padding: 0.5rem;
+    text-align: justify;
+    transition: 0.3s;
+}
+
+.receita__botao:hover{
+    background: #640404;
+}
+
+@media screen and (min-width: 0){
+    .receita{
+        width: 100%;
+    }
 }

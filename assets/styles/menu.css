@@ -1,8 +1,8 @@
 #cabecalho{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 0 2rem 0 2rem;
 }
 
@@ -18,9 +18,9 @@
 }
 
 .menu__link{
-    text-decoration: none;
     color: #808080;
     margin: 0 1.25rem 0 0;
+    text-decoration: none;
     text-transform: uppercase;
 }
 
@@ -31,4 +31,27 @@
 
 .menu__link:hover{
     text-decoration: underline;
+}
+
+
+@media screen and (min-width: 0){
+    #cabecalho{
+        justify-content: center;
+        padding:2rem;
+    }
+
+    #cabecalho > img{
+        display: none;
+    }
+}
+
+@media screen and (min-width:768px){
+    #cabecalho{
+        padding: 0 5rem;
+        justify-content: space-between;
+    }
+
+    #cabecalho > img{
+        display: block;
+    }
 }

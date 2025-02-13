@@ -1,18 +1,50 @@
 .sobre{
-    width: 100%;
     text-align: center;
-
+    padding: 3em 0 3em 0;
+    width: 100%;
 }
 
 .sobre__titulo{  
-    color: #560000;
-    width: 100%;
+    color: #8D0606;
     font-family: Pacifico, cursive;
     font-size: 3rem;
+    width: 100%;
 }
 
 .sobre__descricao{
     color: #595959;
+    font-family: "Roboto", serif;
     font-size: 1.5rem;
     font-weight: 100;
 }
+
+@media screen and (max-width: 768px){
+    .sobre{
+        padding: 2rem;
+    }
+
+    .sobre__titulo{
+        font-size: 2rem;
+    }
+
+    .sobre__descricao{
+        font-size: 1.2rem;
+        padding-top: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px){
+    .sobre{
+        padding: 2.5rem;
+    }
+
+    .sobre__titulo{
+        font-size: 2.5rem;
+    }
+
+    .sobre__descricao{
+        font-size: 1.7em;
+        padding-top: 0.8rem;
+    }
+}
+
