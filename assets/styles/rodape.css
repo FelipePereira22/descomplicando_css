@@ -6,3 +6,17 @@
     padding: 1.728rem;
     text-align: end;
 }
+
+@media screen and (max-width: 600px){
+    .rodape{
+    font-size: 0.8rem;
+    padding: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .rodape{
+    font-size: 1rem;
+    padding: 1.6rem;
+    }
+}

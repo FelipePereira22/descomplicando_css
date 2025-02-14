@@ -39,6 +39,7 @@
 
 .pessoas{
     display: flex;
+    flex-flow: wrap;
     justify-content: space-around;
     padding: 3rem 0 3rem 0;
 }
@@ -66,4 +67,62 @@
     background: url(../images/pessoas/andreia.jpg) no-repeat;
     background-size: contain;
 
+}
+
+@media screen and (max-width: 600px){
+    .quem-somos__titulo{
+        font-size: 2rem;
+    }
+    
+    .quem-somos__descricao{
+        font-size: 1.1rem;
+
+    }
+    .pessoa{
+        padding: 1.5rem;
+    }
+
+    .pessoa__imagem {
+        border-radius: 6rem;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .pessoa__nome{
+        font-size: 1.5rem;
+    }
+    
+    .pessoa__funcao{
+        font-size: 1.1rem;
+
+    }
+}
+
+@media screen and (max-width: 992px){
+    .quem-somos__titulo{
+        font-size: 2.5rem;
+    }
+    
+    .quem-somos__descricao{
+        font-size: 1.6rem;
+
+    }
+    .pessoa{
+        padding: 2rem;
+    }
+
+    .pessoa__imagem {
+        border-radius: 10rem;
+        object-fit: cover;
+    }
+
+    .pessoa__nome{
+        font-size: 2rem;
+    }
+    
+    .pessoa__funcao{
+        font-size: 1.5rem;
+
+    }
 }

@@ -1,17 +1,22 @@
 .receitass{
     background: #e5e5e5;
     display: flex;
-    flex-flow: wrap;
+    flex-wrap: wrap;
     font-family: "Roboto", serif;
-    padding: 5rem 0 0 5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 5rem 1rem;
 }
 
 .receita{
     background-color: #fdfdfd;
+    border-radius: 10px;
     display: flex;
     flex-flow: column;
     margin: 0 5rem 5rem 0;
-    width: calc(25% - 5rem);
+    width: calc(25% - 2rem);
+    overflow: hidden;
 }
 
 .receita__imagem{
@@ -45,8 +50,26 @@
     background: #640404;
 }
 
-@media screen and (min-width: 0){
-    .receita{
-        width: 100%;
+@media screen and (max-width: 600px){
+    .receitass{
+        flex-direction: column;
+        align-items: center;
     }
+
+    .receita{
+        width: 90%;
+        margin-left: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .receitass{
+        align-items: center;
+    }
+
+    .receita{
+        width: 50%;
+        margin-left: 5rem;
+    }   
+
 }
